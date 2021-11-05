@@ -35,5 +35,30 @@ public class Car : MonoBehaviour
 
     #region Unity內資料類型
     // 顏色 、向量(座標) 、按鍵資料 、遊戲物件 、元件
+    //顏色 Color
+    public Color color;
+    public Color colorRed = Color.red;
+    public Color colorYellow = Color.yellow;
+    public Color colorCustom1 = new Color(0, 0, 1);
+    public Color colorCustom2 = new Color(1, 0, 1, 0.5f);
+    //向量 2 ~ 4 Vector
+    public Vector2 v2;
+    public Vector2 v2one = Vector2.one;
+    public Vector2 v2right = Vector2.right;
+    public Vector2 v2left = Vector2.left;
+    public Vector2 v2custom = new Vector2(1, 2);
+    public Vector3 v3custom = new Vector3(1, 2, 3);
+    public Vector4 v4custom = new Vector4(1, 2, 3, 4);
+    //按鍵 Keycode
+    public KeyCode keycode;
+    public KeyCode keycodeMouseleft = KeyCode.Mouse0;
+    public KeyCode keycodeJump = KeyCode.Space;
+    //遊戲物件 GameObject
+    public GameObject goCamera;
+    public GameObject goCar;
+    //元件 Component
+    public Transform traCamera;
+    public Camera cam;
+    public SpriteRenderer spr;
     #endregion
 }
